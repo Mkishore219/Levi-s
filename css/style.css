@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap');
+
+
+::-moz-selection {
+    background-color: black;
+    color: #fff;
+}
+
+::selection {
+    background-color: black;
+    color: #fff;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background: #ffffff;
+    /* background: #d9bf7e79; */
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+    text-align: start;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+svg,
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* **********************************************************************/
+/* **********************************************************************/
+/* **********************************************************************/
+/* **********************************************************************/
+
+:root {
+    --bg-theme: black;
+    --border-line: #0000004f;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    /* border: 2px solid #f1f1f1; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* cursor */
+#cursor {
+    height: 7px;
+    width: 7px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 10;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+button,
+a {
+    position: relative;
+    z-index: 20;
+}
+
+
+
+/* wts-app-chat */
+.wts-app{
+    background-color: #10122b;
+    color: white;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 50;
+    border-radius: 34px 8px 34px 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .26);
+}
+
+
+
+
+
+
+
+
+
+/* header-top */
+.header-top{
+    background-color: white;
+}
+.header-top-contact{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 15px;
+}
+.header-top p{
+    margin-bottom: 0;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.header-top p i{
+    color: #10122b;
+}
+
+
+
+
+
+
+
+
+
+/* header */
+header{
+    background-color: #10122b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+/* logo  */
+header .logo{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+header .logo img{
+    height: 60px;
+}
+
+/* nav */
+header nav {
+    padding: 10px 0 20px 0;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* hero */
+section#hero{
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+section#hero .hero-img img{
+    width: 100%;
+}
+
+section#hero .hero-txt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+section#hero .hero-txt h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: #10122ba2;
+    display:block;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+section#hero .hero-txt h3 i{
+    font-size: 20px;
+    padding: 10px;
+    background: #10122bda;
+    color: #ffffff;
+    border-radius: 50%;
+}
+section#hero .hero-txt span.hero-bold{
+    font-size: 20px;
+    font-weight: 600;
+    color: #10122b;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.heading-line{
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* about */
+section#about{
+    background: #e8e8e7;
+}
+section#about h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #10122b;
+}
+
+/* about-info */
+section#about .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#about .about-info a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #10122b;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* about-img */
+section#about .about-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* choose-us */
+section#choose-us h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #10122b;
+}
+
+
+/* choose-us-box */
+section#choose-us .choose-us-box{
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    padding: 20px;
+    height: 280px;
+    border-radius: 5px;
+}
+section#choose-us .choose-us-box i{
+    color: #10122bd0;
+    font-size: 27px;
+}
+section#choose-us .choose-us-box h5{
+    color: #10122b;
+    margin: 3px 0 15px 0;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+/* products */
+section#products{
+    background: #e8e8e7;
+}
+section#products h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #10122b;
+}
+section#products .col-md-4{
+   padding: 0 5px;
+}
+
+section#products .product{
+    position: relative;
+    margin-bottom: 8px;
+}
+section#products .product-img img{
+    width: 100%;
+}
+section#products .product-img .product-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(0 0 0 / 58%) 33.333%, rgb(0 0 0 / 0%) 66.666%, rgba(255, 255, 255, 0) 99.999%);
+}
+
+/* product-title */
+section#products .product-title{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+section#products .product-title h5{
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+section#products .product-title a{
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.781);
+    margin-bottom: 3px;
+    display: inline-block;
+    text-decoration: none;
+}
+section#products .product-title a:hover .check-underline {
+    width: 60px;
+    transition: width 0.3s ease;
+}
+
+section#products a.product-btn{
+    padding: 10px 20px;
+    background-color: #10122b;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.check-underline{
+    height: 1px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 22px;
+}
+
+
+
+
+
+
+/* contact-us */
+section#contact-us .heading-line{
+    margin-bottom: 20px;
+}
+section#contact-us .heading-line h4{
+    color: #10122b;
+}
+section#contact-us .contact-txt .col-md-6{
+    margin-bottom: 25px;
+}
+section#contact-us .contact-txt i{
+    font-weight: 0;
+    font-size: 25px;
+    color: #10122b;
+}
+
+
+
+
+section#contact-us .map{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer > .container{
+    padding-top: 50px;
+    border-top: 1px solid black;
+}
+
+
+/* logo */
+footer .footer-top{
+    margin-bottom: 40px;
+}
+footer .logo h4{
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+footer .logo img{
+    height: 60px;
+}
+
+
+/* footer-social-media */
+footer .footer-social-media ul{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+footer .footer-social-media ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+footer .footer-social-media ul li a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+}
+
+
+/* footer-underline */
+footer .footer-underline{
+    height: 2px;
+    width: 35px;
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+
+/* footer-navigation */
+footer .footer-navigation h6{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+footer .footer-navigation ul li{
+    list-style-type: none;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+footer .footer-navigation ul li a{
+    color: black;
+    text-decoration: none;
+}
+footer .footer-navigation ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+footer .footer-copy-rights .container {
+    border-top: 1px solid black;
+    margin-top: 40px;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-copy-rights .container p {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **********************************************************************/
+/* **********************************************************************/
+/* **********************************************************************/
+/* **********************************************************************/
+
+
+/* **********************************
+******  CSS MEDIA QUERIES ********* 
+************************************/
+
+/* Start of Design for Small Desktops */
+@media screen and (max-width: 1440px) {}
+
+/* End of Design for Small Desktops */
+
+/* Start of Design for Tablets */
+@media screen and (max-width: 960px) {
+   
+
+
+}
+
+/* End of Design for Tablets */
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    section#hero .hero-img img {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Start of Design for Mobile Phones */
+@media screen and (max-width: 576px) {
+
+
+
+}
+
+/* End of Design for Mobile Phones */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+   
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+   
+
+}
